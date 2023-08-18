@@ -12,6 +12,7 @@
         #miCanvas{
             border: 1px solid #000;
             margin: 10px;
+            background-color: #b3bdd5;
         }
     </style>
 
@@ -19,9 +20,15 @@
         const canvas = document.getElementById('miCanvas');
         const ctx = canvas.getContext('2d');
 
+        //primer texto fill normal
+        ctx.fillStyle = 'white';
+        ctx.font = '50px Arial';
+        ctx.fillText('Hola mundo', 48, 196);
+
+        //segundo texto stroke
         ctx.strokeStyle = 'green';
         ctx.font = "50px Arial";
-        ctx.strokeText('hola mundo', 50,200)
+        ctx.strokeText('Hola mundo', 50,200);
     </script>
 </body>
 </html>
